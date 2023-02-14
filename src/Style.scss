@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #19191f;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .PlayerDeMusica {
+    gap: 2rem;
+    width: 290px;
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    background-color: #ddd;
+
+    .Title {
+      .List {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .Item {
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #24252b;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .Detalhes {
+      gap: 1rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        width: 180px;
+        border-radius: 100%;
+        border: 6px dashed #24252b;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+    }
+
+    .BarraDaMusica {
+      gap: 0.5rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      input {
+        width: 100%;
+      }
+
+      .TempoDaMusica {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .Controles {
+      .List {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .Item {
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #24252b;
+            background-color: transparent;
+          }
+
+          &:nth-child(3) button {
+            font-size: 2rem;
+            padding: 0.5rem;
+            color: white;
+            border-radius: 100%;
+            background-color: #24252b;
+          }
+        }
+      }
+    }
+  }
+}
